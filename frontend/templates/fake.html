@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Does It Make Cents?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='noscript.css') }}"/>
+	</head>
+	<body>
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+							<article id="home" class="panel">
+								<header>
+									<h1 align="center">Does It Make Cents?</h1>
+									<p align="center">
+										Artificial Intelligence Powered Scam Detector. 
+										<br> 
+										Simply copy & paste your suspicious SMS or email below and get AI predicted insights on its validity
+									</p>
+								</header>
+								<section>
+									<h1 id="icon" align="center" class="icon solid fa-times"></h1>
+									<br>
+									<h3 align="center" id="prediction">Prediction: Fake</h3>
+									<h3 align="center" id="confidence">Confidence: {{ confidence }} %</h3>
+									<br>	
+								</section>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Hack Western 8 Fin-Tech Project.</li><li>Created by: <a href="https://www.sujeethanvigneswaran.com" target="_blank">👋 Sujeethan Vigneswaran</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
